@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicio profesional de reparación y mantenimiento de computadoras en Celaya. Formateo, limpieza, eliminación de virus y más.">
+  <meta name="keywords" content="Reparación de computadoras, técnico en computación, mantenimiento PC Celaya, formateo, virus, optimización">
+  <meta name="author" content="Yair Juárez">
+  <title>Yair's Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      --primary: #00d1ff;
+      --primary-dark: #00aacc;
+      --dark: #0e0e0e;
+      --dark-light: #1a1a1a;
+      --dark-lighter: #1f1f1f;
+      --text: #ffffff;
+      --text-light: #cccccc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, footer {
+      background: var(--dark-lighter);
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    h1, h2, h3 { color: var(--primary); font-weight: 700; }
+    nav {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: var(--text-light); text-decoration: none;
+      padding: 6px 12px; border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    nav a:hover { background: rgba(0, 209, 255, 0.1); color: var(--primary); }
+    main { max-width: 960px; margin: auto; padding: 40px 20px; }
+    section { margin-bottom: 50px; }
+    .card {
+      background: var(--dark-light);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 209, 255, 0.1);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 209, 255, 0.2);
+    }
+    .button {
+      display: inline-block; margin-top: 20px; padding: 10px 20px;
+      background: var(--primary); color: #000; font-weight: bold;
+      border: 2px solid transparent; border-radius: 5px;
+      text-decoration: none; transition: 0.3s ease;
+    }
+    .button:hover {
+      background: transparent; color: var(--primary); border-color: var(--primary);
+    }
+    ul.services-list { list-style: none; margin-top: 15px; }
+    ul.services-list li {
+      padding-left: 25px; position: relative; margin-bottom: 10px;
+    }
+    ul.services-list li::before {
+      content: "\2713"; position: absolute; left: 0; color: var(--primary); font-weight: bold;
+    }
+    .price-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    .price-table th, .price-table td {
+      border-bottom: 1px solid #333; padding: 10px 15px; text-align: left;
+    }
+    .price-table th { background: rgba(0, 209, 255, 0.1); color: var(--primary); }
+    .contact-info a { color: var(--primary); text-decoration: none; }
+    .contact-info a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      nav { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yair's Tech</h1>
+    <p class="tagline">Reparación y mantenimiento de computadoras en Celaya</p>
+    <nav aria-label="Menú principal">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section id="sobre">
+      <h2>Sobre mí</h2>
+      <div class="card">
+        <p>Hola, soy Yair. Decidí emprender con Yair's Tech porque en mi familia siempre hemos vivido con lo justo económicamente, y quiero empezar a generar ingresos haciendo lo que me apasiona: la tecnología. Soy una persona curiosa, autodidacta y con muchas ganas de seguir aprendiendo cada día. Disfruto ayudar a los demás y poner mis conocimientos al servicio de quienes lo necesiten. Si puedo ayudarte con tu equipo, ¡aquí estoy!</p>
+      </div>
+    </section>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="card">
+        <h3>¿Qué ofrezco?</h3>
+        <ul class="services-list">
+          <li>Formateo de Windows o Linux</li>
+          <li>Limpieza interna y cambio de pasta térmica</li>
+          <li>Eliminación de virus y malware</li>
+          <li>Instalación de programas y drivers</li>
+          <li>Recuperación de archivos</li>
+          <li>Diagnóstico de fallas</li>
+          <li>Asesoría para actualizar o armar tu PC</li>
+        </ul>
+      </div>
+    </section>
+    <section id="precios">
+      <h2>Precios</h2>
+      <div class="card">
+        <table class="price-table">
+          <thead>
+            <tr><th>Servicio</th><th>Precio</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Limpieza interna</td><td>$300 MXN</td></tr>
+            <tr><td>Formateo con sistema</td><td>$500 MXN</td></tr>
+            <tr><td>Eliminación de virus</td><td>$400 MXN</td></tr>
+            <tr><td>Diagnóstico</td><td>$150 MXN*</td></tr>
+            <tr><td>Paquete completo</td><td>$900 MXN</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 10px; font-size: 0.9em;">*El costo se descuenta si contratas un servicio adicional.</p>
+      </div>
+    </section>
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <div class="card">
+        <p>He trabajado optimizando PCs, eliminando fallas y recuperando información. También configuro equipos para gaming o trabajo profesional.</p>
+      </div>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="card contact-info">
+        <p><strong>Email:</strong> <a href="mailto:yair.tecnico@email.com">yair.tecnico@email.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5214611113244" target="_blank">+52 1 461 111 3244</a></p>
+        <p><strong>Zona:</strong> Celaya, Guanajuato</p>
+        <p><strong>Horario:</strong> Lunes a Sábado de 9:00 am a 7:00 pm</p>
+        <a class="button" href="https://wa.me/5214611113244" target="_blank">¡Contáctame por WhatsApp!</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Yair's Tech  - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
